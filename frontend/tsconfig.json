@@ -10,10 +10,14 @@
       "@/*": ["src/*"],
       "@layouts/*": ["layouts/*"],
       "@pages/*": ["pages/*"],
+      "@hooks/*": ["hooks/*"],
       "@components/*": ["components/*"],
       "@utils/*": ["utils/*"],
       "@services/*": ["services/*"],
+      "@constants/*": ["constants/*"],
       "@types/*": ["/@types/*"],
+      "@config/*": ["config/*"],
+      "@queries/*": ["queries/*"],
     },
 
     /* Bundler mode */

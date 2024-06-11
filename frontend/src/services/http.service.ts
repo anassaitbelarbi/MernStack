@@ -138,4 +138,7 @@ class HttpService {
   }
 }
 
-export default HttpService;
+const httpService = new HttpService();
+// export default apiService;
+
+export default httpService;

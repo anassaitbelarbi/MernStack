@@ -1,24 +1,13 @@
-import { useEffect, useState } from "react";
-import HttpService from "@services/http.service"
-import { IModel } from "types";
+import { useQueryWorkouts } from "@queries/workout/queryWorkout";
 
 function Test() {
-    const http = new HttpService();
-    const [users, setUsers] = useState<IModel.IUser[]>([]);
+   
+    const {data, isLoading} = useQueryWorkouts()
 
-    const spoolUserRecords = async () => {
-        const response = await http.service().get<IModel.IUser[]>(`/users`);
-        if (response?.length) setUsers([...response]);
-    };
-
-    useEffect(() => {
-        spoolUserRecords();
-    }, []);
-
-
+   if(isLoading) return <p>........</p>
 
     return (
-        <>{users?.map((user: IModel.IUser) => <p>{user.name}</p>)}</>
+        <>{data?.map((data) => <p key={data._id}>{data.title}</p>)}</>
     )
 }
 
