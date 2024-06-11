@@ -7,7 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Ignore node_modules in the backend and frontend directories
+backend/node_modules/
+dist
+dist-ssr
+*.local
+
+# Ignore node_modules in the frontend directories
+frontend/node_modules/
 dist
 dist-ssr
 *.local
