@@ -19,6 +19,7 @@
     "@tanstack/react-query-devtools": "^5.40.1",
     "axios": "^1.7.2",
     "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
+    "date-fns": "^3.6.0",
     "eslint-plugin-react-compiler": "^0.0.0-experimental-51a85ea-20240601",
     "path": "^0.12.7",
     "react": "^18.2.0",
